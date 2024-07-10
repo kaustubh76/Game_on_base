@@ -14,15 +14,11 @@ const GAME_ABI: string[] = [
 const GAME_ADDRESS: { [chainId: string]: string } = {
   "11155111": "0x0c8743d6979ae62146B34094C60fC6AccCC90917",
   "84532": "0x8a7Bffde4Fd95e0fAF9D15c0C2ecd8CF5b44aA1d",
-  "51": "0xF07b86d5DCd3165A23438bc37a8964128a94c7f0",
-  "2710": "0xF07b86d5DCd3165A23438bc37a8964128a94c7f0",
 };
 
 const RPC_PROVIDER: { [chainId: string]: ethers.JsonRpcProvider } = {
   "11155111": new ethers.JsonRpcProvider("https://sepolia.drpc.org"),
   "84532": new ethers.JsonRpcProvider("https://sepolia.base.org"),
-  "51": new ethers.JsonRpcProvider("https://apothem.xdcrpc.com"),
-  "2710": new ethers.JsonRpcProvider("https://rpc-testnet.morphl2.io"),
 };
 
 const DEFAULT_SIGNER = ethers.Wallet.fromPhrase(
